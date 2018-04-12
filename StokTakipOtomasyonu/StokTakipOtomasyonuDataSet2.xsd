@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StokTakipOtomasyonuDataSet2" targetNamespace="http://tempuri.org/StokTakipOtomasyonuDataSet2.xsd" xmlns:mstns="http://tempuri.org/StokTakipOtomasyonuDataSet2.xsd" xmlns="http://tempuri.org/StokTakipOtomasyonuDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="StokTakipOtomasyonuConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="StokTakipOtomasyonuConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StokTakipOtomasyonu.Properties.Settings.GlobalReference.Default.StokTakipOtomasyonuConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UrunlerTableAdapter" GeneratorDataComponentClassName="UrunlerTableAdapter" Name="Urunler" UserDataComponentName="UrunlerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StokTakipOtomasyonuConnectionString (Settings)" DbObjectName="StokTakipOtomasyonu.dbo.Urunler" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT UrunAdi, StokAdeti, UrunFiyati, UrunKodu, AlisFiyati, SatisFiyati FROM dbo.Urunler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UrunAdi" DataSetColumn="UrunAdi" />
+              <Mapping SourceColumn="StokAdeti" DataSetColumn="StokAdeti" />
+              <Mapping SourceColumn="UrunFiyati" DataSetColumn="UrunFiyati" />
+              <Mapping SourceColumn="UrunKodu" DataSetColumn="UrunKodu" />
+              <Mapping SourceColumn="AlisFiyati" DataSetColumn="AlisFiyati" />
+              <Mapping SourceColumn="SatisFiyati" DataSetColumn="SatisFiyati" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StokTakipOtomasyonuDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="StokTakipOtomasyonuDataSet2" msprop:Generator_UserDSName="StokTakipOtomasyonuDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Urunler" msprop:Generator_TableClassName="UrunlerDataTable" msprop:Generator_TableVarName="tableUrunler" msprop:Generator_TablePropName="Urunler" msprop:Generator_RowDeletingName="UrunlerRowDeleting" msprop:Generator_RowChangingName="UrunlerRowChanging" msprop:Generator_RowEvHandlerName="UrunlerRowChangeEventHandler" msprop:Generator_RowDeletedName="UrunlerRowDeleted" msprop:Generator_UserTableName="Urunler" msprop:Generator_RowChangedName="UrunlerRowChanged" msprop:Generator_RowEvArgName="UrunlerRowChangeEvent" msprop:Generator_RowClassName="UrunlerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UrunAdi" msprop:Generator_ColumnVarNameInTable="columnUrunAdi" msprop:Generator_ColumnPropNameInRow="UrunAdi" msprop:Generator_ColumnPropNameInTable="UrunAdiColumn" msprop:Generator_UserColumnName="UrunAdi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StokAdeti" msprop:Generator_ColumnVarNameInTable="columnStokAdeti" msprop:Generator_ColumnPropNameInRow="StokAdeti" msprop:Generator_ColumnPropNameInTable="StokAdetiColumn" msprop:Generator_UserColumnName="StokAdeti" type="xs:int" />
+              <xs:element name="UrunFiyati" msprop:Generator_ColumnVarNameInTable="columnUrunFiyati" msprop:Generator_ColumnPropNameInRow="UrunFiyati" msprop:Generator_ColumnPropNameInTable="UrunFiyatiColumn" msprop:Generator_UserColumnName="UrunFiyati">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunKodu" msprop:Generator_ColumnVarNameInTable="columnUrunKodu" msprop:Generator_ColumnPropNameInRow="UrunKodu" msprop:Generator_ColumnPropNameInTable="UrunKoduColumn" msprop:Generator_UserColumnName="UrunKodu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AlisFiyati" msprop:Generator_ColumnVarNameInTable="columnAlisFiyati" msprop:Generator_ColumnPropNameInRow="AlisFiyati" msprop:Generator_ColumnPropNameInTable="AlisFiyatiColumn" msprop:Generator_UserColumnName="AlisFiyati" type="xs:decimal" />
+              <xs:element name="SatisFiyati" msprop:Generator_ColumnVarNameInTable="columnSatisFiyati" msprop:Generator_ColumnPropNameInRow="SatisFiyati" msprop:Generator_ColumnPropNameInTable="SatisFiyatiColumn" msprop:Generator_UserColumnName="SatisFiyati" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
