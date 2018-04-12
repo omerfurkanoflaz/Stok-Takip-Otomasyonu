@@ -1,0 +1,1 @@
+# Stok Takip Otomasyonu
